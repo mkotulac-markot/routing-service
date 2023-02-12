@@ -16,6 +16,6 @@
  ```{"route":["CZE","AUT","ITA"]}```
     
 ### Used algorithm
-**Iterative Depth-First Search with Path Memorization**
+Iterative Depth-First Search with Path Memorization </br>
 [source](https://www.baeldung.com/cs/dfs-vs-bfs-vs-dijkstra#5-memorizing-the-path-while-searching)
 
