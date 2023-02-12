@@ -7,7 +7,7 @@
     - alternatively via command ```mvnw spring-boot:run``` (run)
 - **Linux/macOS**
   - via file [START](routing-service-start.sh) (build + run)
-  - via command ```./mvnw spring-boot:run```
+  - alternatively via command ```./mvnw spring-boot:run```
 
 ### Test
 - command ```curl --request GET --url http://localhost:8080/routing/CZE/ITA```
