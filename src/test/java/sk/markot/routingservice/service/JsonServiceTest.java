@@ -19,7 +19,7 @@ class JsonServiceTest {
 
     @Test
     void loadData() {
-        JsonService service = new JsonService(objectMapper, null, "src/test/resources/countries.json");
+        JsonService service = new JsonService(objectMapper, null, "src/test/resources/countries-single.json");
 
         Country[] countries = service.loadData();
 
