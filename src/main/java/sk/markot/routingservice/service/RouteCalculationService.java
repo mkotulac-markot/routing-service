@@ -26,9 +26,15 @@ public class RouteCalculationService {
           Country originCountry = cacheService.getCountry(origin);
           Country destinationCountry = cacheService.getCountry(destination);
 
+          if (originCountry.equals(destinationCountry)) {
+              Route route = new Route(Collections.singletonList(originCountry.code()));
+              return Optional.of(route);
+          }
+
           if (originCountry.isLandConnected(destinationCountry)) {
+              CountryPath countryPath = new CountryPath(originCountry, Collections.singletonList(origin));
               Queue<CountryPath> queue = new LinkedList<>();
-              queue.add(new CountryPath(originCountry, Collections.singletonList(origin)));
+              queue.add(countryPath);
               return Optional.ofNullable(calculateRoute(queue, destinationCountry));
           } else {
               return Optional.empty();
