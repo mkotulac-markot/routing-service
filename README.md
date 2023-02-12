@@ -6,13 +6,13 @@
     - via file [START](routing-service-start.cmd) (build + run)
     - alternatively via command ```mvnw spring-boot:run``` (run)
 - **Linux/macOS**
-  - [START](routing-service-start.sh) (build + run)
+  - via file [START](routing-service-start.sh) (build + run)
   - via command ```./mvnw spring-boot:run```
 
 ### Test
 - command ```curl --request GET --url http://localhost:8080/routing/CZE/ITA```
 
-### Output from console should be JSON:
+### Console output should be JSON:
  ```{"route":["CZE","AUT","ITA"]}```
     
 ### Used algorithm
